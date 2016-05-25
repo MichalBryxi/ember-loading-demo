@@ -1,22 +1,27 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <nav class="navbar navbar-light bg-faded">
+        <div class="nav navbar-nav">
+          {{#link-to 'slow' class='nav-item nav-link'}}
+            Slow
+          {{/link-to}}
 
-<p>
-  This is our main application content. It does not load any data, so it can be displayed instantly.
-</p>
+          {{#link-to 'fast' class='nav-item nav-link'}}
+            Fast
+          {{/link-to}}
+        </div>
+      </nav>
 
-<ul>
-  <li>
-    {{#link-to 'slow'}}
-      Slow
-    {{/link-to}}
-  </li>
-  <li>
-    {{#link-to 'fast'}}
-      Fast
-    {{/link-to}}
-  </li>
-</ul>
+      <h2 id="title">Welcome to Ember</h2>
 
-<hr />
+      <p>
+        This is our main application content. It does not load any data, so it can be displayed instantly.
+      </p>
 
-{{outlet}}
+      <hr />
+
+      {{outlet}}
+    </div>
+  </div>
+</div>
