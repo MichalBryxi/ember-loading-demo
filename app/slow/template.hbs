@@ -1,1 +1,9 @@
-Hello there, I'm a really slow resource!
+<p>
+  Hello there, I'm a really slow resource!
+</p>
+
+<ul>
+  {{#each model as |item|}}
+    <li>{{item.name}}</li>
+  {{/each}}
+</ul>
