@@ -2,8 +2,28 @@
   Hello there, I'm a really slow resource!
 </p>
 
-<ul>
-  {{#each model as |item|}}
-    <li>{{item.name}}</li>
-  {{/each}}
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>
+        name
+      </th>
+      <th>
+        foo
+      </th>
+      <th>
+        bar
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each model as |item|}}
+      <tr>
+        <td>{{item.name}}</td>
+        <td>foo</td>
+        <td>bar</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
