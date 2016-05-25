@@ -9,4 +9,5 @@ export default function(server) {
 
   server.createList('slow', 10);
   server.createList('fast', 10);
+  server.createList('really-slow', 10);
 }

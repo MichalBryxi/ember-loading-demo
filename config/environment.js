@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'loading',
+    modulePrefix: 'ember-loading-demo',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -40,7 +40,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    };
   }
 
   return ENV;
