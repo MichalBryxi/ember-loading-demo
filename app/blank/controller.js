@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  currentlyLoading: false
+  lastUpdate: null
 });

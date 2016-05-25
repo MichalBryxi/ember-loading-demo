@@ -24,11 +24,7 @@
       {{/each}}
     {{else}}
       {{#each model as |item|}}
-        <tr>
-          <td>{{item.name}}</td>
-          <td>foo</td>
-          <td>bar</td>
-        </tr>
+        {{slow-list-row model=item lastUpdate=lastUpdate}}
       {{/each}}
     {{/if}}
   </tbody>
