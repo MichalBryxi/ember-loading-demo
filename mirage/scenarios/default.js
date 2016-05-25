@@ -8,4 +8,5 @@ export default function(server) {
   */
 
   server.createList('slow', 10);
+  server.createList('fast', 10);
 }

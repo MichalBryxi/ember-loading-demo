@@ -3,12 +3,16 @@
     <div class="col-sm-12">
       <nav class="navbar navbar-light bg-faded">
         <div class="nav navbar-nav">
+          {{#link-to 'fast' class='nav-item nav-link'}}
+            Fast
+          {{/link-to}}
+
           {{#link-to 'slow' class='nav-item nav-link'}}
             Slow
           {{/link-to}}
 
-          {{#link-to 'fast' class='nav-item nav-link'}}
-            Fast
+          {{#link-to 'nested.deep' class='nav-item nav-link'}}
+            Nested
           {{/link-to}}
         </div>
       </nav>

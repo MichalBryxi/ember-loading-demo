@@ -8,6 +8,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('slow');
   this.route('fast');
+  this.route('nested', function() {
+    this.route('deep');
+  });
 });
 
 export default Router;

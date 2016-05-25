@@ -1,1 +1,29 @@
-{{outlet}}
+<p>
+  Hello there, I'm a really fast resource!
+</p>
+
+<table class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th>
+        name
+      </th>
+      <th>
+        foo
+      </th>
+      <th>
+        bar
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each model as |item|}}
+      <tr>
+        <td>{{item.name}}</td>
+        <td>foo</td>
+        <td>bar</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
