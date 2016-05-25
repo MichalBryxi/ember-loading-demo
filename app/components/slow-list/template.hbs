@@ -1,25 +1,35 @@
 <table class="table table-hover table-striped">
   <thead>
     <tr>
-      <th>
+      <th style="width: 33%">
         name
       </th>
-      <th>
+      <th style="width: 33%">
         foo
       </th>
-      <th>
+      <th style="width: 33%">
         bar
       </th>
     </tr>
   </thead>
 
   <tbody>
-    {{#each model as |item|}}
-      <tr>
-        <td>{{item.name}}</td>
-        <td>foo</td>
-        <td>bar</td>
-      </tr>
-    {{/each}}
+    {{#if blank}}
+      {{#each blankData as |item|}}
+        <tr>
+          <td>{{x-blank}}</td>
+          <td>{{x-blank}}</td>
+          <td>{{x-blank}}</td>
+        </tr>
+      {{/each}}
+    {{else}}
+      {{#each model as |item|}}
+        <tr>
+          <td>{{item.name}}</td>
+          <td>foo</td>
+          <td>bar</td>
+        </tr>
+      {{/each}}
+    {{/if}}
   </tbody>
 </table>

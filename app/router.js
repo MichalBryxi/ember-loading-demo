@@ -11,6 +11,9 @@ Router.map(function() {
   this.route('nested', function() {
     this.route('deep');
   });
+  this.route('blank', function() {
+    this.route('deep');
+  });
 });
 
 export default Router;
